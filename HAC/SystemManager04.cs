@@ -57,7 +57,7 @@ namespace HAC
 
             m_Position = 0;
             m_Go = false;
-            m_Qty = 0;
+            m_Qty = 1;
         }
 
         ~SystemManager04()

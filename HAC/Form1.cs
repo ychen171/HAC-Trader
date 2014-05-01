@@ -19,6 +19,7 @@ namespace HAC
         List<Form3> m_RSI;
         List<Form4> m_MFI;
         List<Form5> m_FI;
+        List<Form6> m_DC;
 
         public Form1()
         {
@@ -27,6 +28,7 @@ namespace HAC
             m_RSI = new List<Form3>();
             m_MFI = new List<Form4>();
             m_FI = new List<Form5>();
+            m_DC = new List<Form6>();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -67,6 +69,9 @@ namespace HAC
                 
                 // Donchian Channel
                 case 4:
+                    m_DC.Add(new Form6());
+                    m_DC.Last().Text = m_Symbol;
+                    m_DC.Last().Show();
                     break;
                 
                 // Nope

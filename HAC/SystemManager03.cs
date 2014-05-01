@@ -125,7 +125,7 @@ namespace HAC
                     m_Start = false;
                 }
 
-                // Has there been oversold?
+                // Has there been oversold? Buy Signal
                 if (m_RSI < 40 && m_State != Value_State.LOW)
                 {
                     // Change state.
@@ -144,7 +144,7 @@ namespace HAC
                     m_Stop = m_Tick.Price - m_StopTicks * m_Instrument.TickSize();
                 }
 
-                // Has there been overbought?
+                // Has there been overbought? Sell Signal
                 if (m_RSI >= 60 && m_State != Value_State.HIGH)
                 {
                     // Change state.

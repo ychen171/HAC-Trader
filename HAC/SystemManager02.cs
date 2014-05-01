@@ -79,7 +79,7 @@ namespace HAC
             {
                 // Calculate the K and D values.
                 m_Max = 0;
-                m_Min = 1000000000;
+                m_Min = 999999999;
                 for (int i = m_TickList.Count - m_Ticks; i < m_TickList.Count - 1; i++)
                 {
                     m_Max = Math.Max(m_Max, m_TickList[i].Price);
